@@ -1,12 +1,12 @@
 export default {
 	props: {
-		condition: false
+		condition: false,
 	},
 
-	test({ assert, component, target, window }) {
+	test({ assert, component, window }) {
 		assert.equal(window.document.title, '');
 
 		component.condition = true;
 		assert.equal(window.document.title, 'woo!!!');
-	}
+	},
 };

@@ -1,6 +1,6 @@
 export default {
-	test({ assert, component, target }) {
+	test({ component }) {
 		// Would cause "TypeError: Cannot read property 'o' of undefined"
 		component.foo = false;
-	}
+	},
 };
